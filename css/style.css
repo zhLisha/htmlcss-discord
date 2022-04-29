@@ -6,8 +6,30 @@
 }
 
 /* COMMON */
+body{
+    font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
 ul{
     list-style-type: none;
+}
+
+.btn{
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px;
+}
+.btn.small{
+    padding: 8px 13px;
 }
 
 hr{
@@ -18,7 +40,7 @@ hr{
 /* Head-top */
 .container-header-top{
     /* TEST */
-    background-color: #add8e6;
+    background-color: #255ee9;
 }
 
 .container-flex-top{
@@ -30,14 +52,9 @@ hr{
     align-items: center;
 }
 
-.logo, nav, .login{
-    /* TEST */
-    padding: 5px;
-    border: 2px dotted black;
-    background-color: #f0b319;
+.logo img{
+    width: 110px;
 }
-
-/* Se noi invece avessimo messo questi 3 elementi dentro un altro div con le proprieta' flex - che in questo caso ho messo al "container-flex-top - avremo potuto direttamente fare la classe cosi, invece di prenderli singolarmente. */
 
 .logo{
     width: 20%;
@@ -54,8 +71,10 @@ nav ul{
     display: flex;
     justify-content: center;
 }
-nav ul li{
-    padding: 0 5px;
+nav ul li, li a{
+    padding: 0 10px;
+    color: white;
+    font-size: 15px;
 }
 
 /* Head-Bottom */
