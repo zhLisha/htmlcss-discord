@@ -40,6 +40,9 @@ ul{
 .white-font{
     color: white;
 }
+.blue-font{
+    color: #7289da;
+}
 
 hr{
     border-color: white;
@@ -61,6 +64,11 @@ h1, h2{
 .space-paragraph{
     font-size: 17px;
     line-height: 30px;
+}
+
+.footer-text{
+    color: white;
+    font-size: 14px;
 }
 
 /* HEADER */
@@ -169,7 +177,7 @@ nav ul li, li a{
 
 /* CONTAINERI GREY BIG */
 .grey.big{
-    height: 1100px;
+    height: 1200px;
     background-color: #f6f6f6;
 }
 
@@ -208,42 +216,62 @@ aside{
 /* FOOTER */
 /* SECTION 1 */
 .black, .black-bottom{
-    height:400px;
     background-color: #23272a;
 }
 
 .info-left, .info-right{
-    height: 380px;
-    margin-bottom: 13px;
+    height: 350px;
 }
 
 .info-left{
-    width: 35%;
-
-    /* TEST */
-    border: 2px dotted black;
+    width: 25%;
 }
 
 .info-right{
-    width: 65%;
-
-    /* TEST */
-    border: 2px dotted black;
+    width: 75%;
 }
 
 .container-info{
     height: 100%;
     display: flex;
     justify-content: space-between;
-    
-    /* TEST */
+}
+.info-left > span{
+    font-size: 33px;
+}
 
+.region img{
+    width: 20px;
+    padding: 20px 0;
+    vertical-align: middle;
+}
+.info-left .footer-text{
+    vertical-align: middle;
+}
+.info-left i{
+    vertical-align: middle;
+    color: white;
+    font-size: 10px;
+}
+
+.icons i{
+    font-size: 20px;
+    padding-right: 20px;
 }
 
 .text{
     width: calc(100% / 4);
-    /* TEXT */
-    border: 2px dotted white;
+}
+
+li.blue-font{
+    padding-left: 10px;
+}
+.footer-text li{
+    padding-bottom: 20px;
+}
+
+.black .container-content{
+    border-bottom: 2px solid #2f3644;
 }
 
 /* SECTION 2 */
@@ -255,18 +283,8 @@ aside{
 .black-bottom > .container-content{
     justify-content: space-between;
     height: 45px;
-    
-    /* TEST */
-    background-color: #7fffd4 ;
 }
 
-
-
-.logo-footer, .bottone{
-
-    /* TEST */
-    padding: 1px 5px;
-    border: 2px dotted black;
-    background-color: #ffb6c1;
-    font-size: 13px;
+.registration button{
+    background-color: #7289da;
 }
