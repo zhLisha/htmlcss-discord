@@ -49,22 +49,23 @@ hr{
     display: flex;
 }
 
-h1{
-    font-size: 40px;
+h1, h2{
+    font-size: 45px;
 }
+
 
 .space-title{
     padding-bottom: 30px;
 }
 
 .space-paragraph{
+    font-size: 17px;
     line-height: 30px;
 }
 
 /* HEADER */
 /* Head-top */
 .container-header-top{
-    /* TEST */
     background-color: #255ee9;
 }
 
@@ -143,7 +144,8 @@ nav ul li, li a{
 
 
 /* MAIN */
-.container{
+.container, .grey, .white{
+    height: 600px;
     display: flex;
     justify-content: center;
 }
@@ -151,69 +153,67 @@ nav ul li, li a{
 .container-content{
     width: 80%;
     height: 100%;
-    /* margin: auto; */
     display: flex;
     align-items: center;
 }
-/* Potevo mettere HEIGHT nel container per spostare cosi anche align items nello stesso dv */
 
 /* CONTAINER WHITE */
 .white{
-    height: 330px;
     background-color: white;
 }
 
 /* CONTAINER GREY */
 .grey{
-    height: 330px;
-    background-color: lightgrey;
+    background-color: #f6f6f6;
 }
 
 /* CONTAINERI GREY BIG */
 .grey.big{
-    height: 600px;
-    background-color: lightgrey;
+    height: 1100px;
+    background-color: #f6f6f6;
 }
-
 
 .image{
     width: 60%;
-    height: 280px;  
-
-    /* TEST */
-    background-color: #1e90ff;
-    border: 2px dotted black;
+    padding-bottom: 40px;
 }  
 
 aside{
     width: 40%;
-    height: 280px;
-
-    /* TEST */
-    background-color: #ffc0cb;
-    border: 2px dotted black;
+    padding-top: 40px;
+    padding-left: 20px;
 }
 
+.aside-second p.space-paragraph, .aside-third{
+    padding-bottom: 100px;
+}
 
+.aside-second p.space-paragraph{
+    padding-right: 20px;
+}
 
-.big-image{
-    width: 100%;
-    height: 550px;
+.big-content{
+    text-align: center;
+}
 
-    /* testo */
-    background-color: #228b22;
-    border: 2px dotted black;
+.big-content h3{
+    font-size: 25px;
+    padding: 35px;
+}
+
+.big-content button{
+    background-color: #7289da;
 }
 
 /* FOOTER */
 /* SECTION 1 */
 .black, .black-bottom{
-    height: 350px;
+    height:400px;
     background-color: #23272a;
 }
 
 .info-left, .info-right{
-    height: 330px;
+    height: 380px;
     margin-bottom: 13px;
 }
 
@@ -221,7 +221,6 @@ aside{
     width: 35%;
 
     /* TEST */
-    background-color: #f08080;
     border: 2px dotted black;
 }
 
@@ -229,7 +228,6 @@ aside{
     width: 65%;
 
     /* TEST */
-    background-color: #20b2aa;
     border: 2px dotted black;
 }
 
