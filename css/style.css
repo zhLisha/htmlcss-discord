@@ -25,29 +25,53 @@ ul{
 .btn{
     display: inline-block;
     cursor: pointer;
-    border-radius: 20px;
     border: 1px;
 }
 .btn.small{
     padding: 8px 13px;
+    border-radius: 20px;
+}
+.btn.big{
+    font-size: 18px;
+    padding: 15px 20px;
+    border-radius: 35px;
+}
+
+.white-font{
+    color: white;
 }
 
 hr{
     border-color: white;
 }
 
-/* Header */
+.container-top{
+    display: flex;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.space-title{
+    padding-bottom: 30px;
+}
+
+.space-paragraph{
+    line-height: 30px;
+}
+
+/* HEADER */
 /* Head-top */
 .container-header-top{
     /* TEST */
     background-color: #255ee9;
 }
 
-.container-flex-top{
-    width: 70%;
+.container-top.flex-top{
+    width: 80%;
     height: 60px;
     margin: auto;
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -73,27 +97,50 @@ nav ul{
 }
 nav ul li, li a{
     padding: 0 10px;
-    color: white;
     font-size: 15px;
+    color: white;
+}
+
+.login .btn.small{
+    background-color: white;
 }
 
 /* Head-Bottom */
-.container-header-bot{
-    background-color: #00008b;
-    height: 270px;
-    display: flex;
+.jumbotron-background{
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+}
+
+.container-top.header-bot{
+    height: 500px;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
+    padding-top: 30px;
 }
 
-.jumbotron{
+
+.jumbotron-content{
     width: 50%;
-    height: 220px;
-
-    /* TEST */
-    background-color: #ee82ee;
-    border: 2px dotted black;
+    text-align: center;
 }
+
+.jumbotron-button{
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.jumbotron-button .btn.big{
+    background-color: white;
+    margin: 0 10px;
+}
+.jumbotron-button .btn.big.white-font{
+    background-color: #23272a;
+}
+
+
 
 /* MAIN */
 .container{
@@ -102,7 +149,7 @@ nav ul li, li a{
 }
 
 .container-content{
-    width: 70%;
+    width: 80%;
     height: 100%;
     /* margin: auto; */
     display: flex;
